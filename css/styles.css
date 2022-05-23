@@ -44,7 +44,7 @@ textarea {
   overflow-x: scroll;
   display: flex;
   -webkit-overflow-scrolling: touch;
-  /* overflow-scrolling: touch; */
+  overflow-scrolling: touch;
 }
 
 .slide > li {
