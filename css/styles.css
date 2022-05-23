@@ -38,22 +38,6 @@ textarea {
   display: none;
 }
 
-.slide {
-  scroll-snap-type: x mandatory;
-  width: 100%;
-  overflow-x: scroll;
-  display: flex;
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
-}
-
-.slide > li {
-  scroll-snap-align: center;
-  height: 100%;
-  width: 100%;
-  flex: none;
-}
-
 .animate {
   opacity: 0;
   transform: translateY(40px);
@@ -914,12 +898,28 @@ footer ul li:last-child {
     width: 80%;
   }
 
+  .work-inner ul {
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+  }
+
   .work-inner ul li {
     margin: 0;
     width: 100%;
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
+    /* スクロール */
+    scroll-snap-align: center;
+    height: 100%;
+  }
+
+  .work-inner button {
+    display: none;
   }
 
   /* -----------------------------
