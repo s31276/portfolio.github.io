@@ -824,7 +824,7 @@ footer ul li:last-child {
   }
 
   .header nav {
-    margin-left: 30px;
+    margin-left: none;
   }
 
   .header-nav li:not(last-child) {
